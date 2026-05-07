@@ -733,4 +733,10 @@ button.acao {
   .mensagem {
     font-size: 14px;
   }
+  .numero-1 {
+    width: 100px;
+  }
+  .personagem-principal {
+    width: 120px;
+  }
 }
