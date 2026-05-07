@@ -731,12 +731,12 @@ button.acao {
     margin-top: 36px;
   }
   .mensagem {
-    font-size: 14px;
+    font-size: 15px;
   }
   .numero-1 {
-    width: 100px;
+    width: 120px;
   }
   .personagem-principal {
-    width: 120px;
+    width: 130px;
   }
 }
