@@ -125,7 +125,6 @@ export function criarUrlCalendario(tema) {
   const nomeCodificado = encodeURIComponent(tema.calendario.eventoNome || tema.nomeCelebrante);
   const enderecoCodificado = encodeURIComponent(tema.calendario.endereco);
   const dataInicio = converterDataGoogle(tema.calendario.dataInicio);
-  const dataFim = tema.calendario.dataFim ? converterDataGoogle(tema.calendario.dataFim) : '';
-  const dates = dataFim ? `${dataInicio}/${dataFim}` : dataInicio;
-  return `https://www.google.com/calendar/render?action=TEMPLATE&text=${nomeCodificado}&dates=${dates}&location=${enderecoCodificado}`;
+  const dataFim = tema.calendario.dataFim ? converterDataGoogle(tema.calendario.dataFim) : dataInicio;
+  return `https://www.google.com/calendar/render?action=TEMPLATE&text=${nomeCodificado}&dates=${dataInicio}/${dataFim}&location=${enderecoCodificado}`;
 }
