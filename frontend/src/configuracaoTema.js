@@ -14,11 +14,11 @@ export const temas = {
       minuto: '30',
     },
     recursos: {
-      videoConvite: '/src/assets/video.mp4',
-      ilustracaoCentral: '/src/assets/pernalonga.png',
-      ilustracaoRodape: '/src/assets/botao.png',
-      personagemPrincipal: '/src/assets/babys.png',
-      imagemNumeroIdade: '/src/assets/numero1.png',
+      videoConvite: '/assets/video.mp4',
+      ilustracaoCentral: '/assets/pernalonga.png',
+      ilustracaoRodape: '/assets/botao.png',
+      personagemPrincipal: '/assets/babys.png',
+      imagemNumeroIdade: '/assets/numero1.png',
     },
     calendario: {
       endereco: 'Rua morelia 706 Potira',
@@ -31,9 +31,9 @@ export const temas = {
       listaPresentesUrl: '/presentes',
     },
     listaPresentes: [
-      { id: 1, icone: '/src/assets/sapato.png', texto: 'Meu pezinho é tamanho 24' },
-      { id: 2, icone: '/src/assets/roupa.png', texto: 'Visto de 2 a 3 anos' },
-      { id: 3, icone: '/src/assets/brinquedo.png', texto: 'Gosto de brinquedos' },
+      { id: 1, icone: '/assets/sapato.png', texto: 'Meu pezinho é tamanho 24' },
+      { id: 2, icone: '/assets/roupa.png', texto: 'Visto de 2 a 3 anos' },
+      { id: 3, icone: '/assets/brinquedo.png', texto: 'Gosto de brinquedos' },
     ],
   },
   wedding: {
@@ -51,11 +51,11 @@ export const temas = {
       minuto: '00',
     },
     recursos: {
-      videoConvite: '/src/assets/wedding-video.mp4',
-      ilustracaoCentral: '/src/assets/wedding-center.gif',
-      ilustracaoRodape: '/src/assets/wedding-footer.png',
-      personagemPrincipal: '/src/assets/couple.png',
-      imagemNumeroIdade: '/src/assets/age-30.png',
+      videoConvite: '/assets/wedding-video.mp4',
+      ilustracaoCentral: '/assets/wedding-center.gif',
+      ilustracaoRodape: '/assets/wedding-footer.png',
+      personagemPrincipal: '/assets/couple.png',
+      imagemNumeroIdade: '/assets/age-30.png',
     },
     calendario: {
       endereco: 'Rua Exemplo, 123 - Cidade',
@@ -68,9 +68,9 @@ export const temas = {
       listaPresentesUrl: '/presentes',
     },
     listaPresentes: [
-      { id: 1, icone: '/src/assets/sapato.png', texto: 'Sapato tamanho 38' },
-      { id: 2, icone: '/src/assets/roupa.png', texto: 'Roupas tamanho M' },
-      { id: 3, icone: '/src/assets/brinquedo.png', texto: 'Brinquedos diversos' },
+      { id: 1, icone: '/assets/sapato.png', texto: 'Sapato tamanho 38' },
+      { id: 2, icone: '/assets/roupa.png', texto: 'Roupas tamanho M' },
+      { id: 3, icone: '/assets/brinquedo.png', texto: 'Brinquedos diversos' },
     ],
   },
   generic: {
