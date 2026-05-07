@@ -24,8 +24,8 @@ export const temas = {
       endereco: 'Rua morelia 706 Potira',
       mapsUrl: 'https://share.google/3J64KnEAaPNdqH03C',
       eventoNome: 'Aniversário do João Miguel',
-      dataInicio: '20260405T170000',
-      dataFim: '20260405T200000',
+      dataInicio: '16:30 31/05/2026',
+      dataFim: '',
     },
     linksSociais: {
       listaPresentesUrl: '/presentes',
@@ -61,8 +61,8 @@ export const temas = {
       endereco: 'Rua Exemplo, 123 - Cidade',
       mapsUrl: 'https://maps.app.goo.gl/example',
       eventoNome: 'Casamento de Noivo e Noiva',
-      dataInicio: '20260501T180000',
-      dataFim: '20260501T230000',
+      dataInicio: '18:00 01/05/2026',
+      dataFim: '23:00 01/05/2026',
     },
     linksSociais: {
       listaPresentesUrl: '/presentes',
@@ -112,9 +112,20 @@ export const temas = {
   },
 };
 
+function converterDataGoogle(dataBR) {
+  if (!dataBR) return '';
+  const [horaMinuto, data] = dataBR.split(' ');
+  const [hora, minuto] = horaMinuto.split(':');
+  const [dia, mes, ano] = data.split('/');
+  return `${ano}${mes}${dia}T${hora}${minuto}00`;
+}
+
 export function criarUrlCalendario(tema) {
-  if (!tema.calendario.dataInicio || !tema.calendario.dataFim) return '#';
+  if (!tema.calendario.dataInicio) return '#';
   const nomeCodificado = encodeURIComponent(tema.calendario.eventoNome || tema.nomeCelebrante);
   const enderecoCodificado = encodeURIComponent(tema.calendario.endereco);
-  return `https://www.google.com/calendar/render?action=TEMPLATE&text=${nomeCodificado}&dates=${tema.calendario.dataInicio}/${tema.calendario.dataFim}&location=${enderecoCodificado}`;
+  const dataInicio = converterDataGoogle(tema.calendario.dataInicio);
+  const dataFim = tema.calendario.dataFim ? converterDataGoogle(tema.calendario.dataFim) : '';
+  const dates = dataFim ? `${dataInicio}/${dataFim}` : dataInicio;
+  return `https://www.google.com/calendar/render?action=TEMPLATE&text=${nomeCodificado}&dates=${dates}&location=${enderecoCodificado}`;
 }
