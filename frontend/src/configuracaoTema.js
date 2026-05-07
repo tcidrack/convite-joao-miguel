@@ -5,7 +5,7 @@ export const temas = {
     titulo: 'Convite de Aniversário',
     nomeCelebrante: 'João Miguel',
     textoIdade: '',
-    mensagemConvite: 'Venha se divertir comigo!',
+    mensagemConvite: 'Eu e meus amiguinhos estamos aguardando você! Sua presença vai deixar esse dia ainda mais especial!',
     dataEvento: {
       dia: '31',
       mes: 'Maio',

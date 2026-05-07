@@ -730,4 +730,7 @@ button.acao {
     font-size: 18px;
     margin-top: 36px;
   }
+  .mensagem {
+    font-size: 14px;
+  }
 }
