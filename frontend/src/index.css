@@ -250,7 +250,7 @@ body {
 .acao {
   width: 100px;
   height: 120px;
-  background: url("/src/assets/botao.png") no-repeat center/contain;
+  background: url("/assets/botao.png") no-repeat center/contain;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -270,9 +270,6 @@ button.acao {
 
 .acao:nth-child(2) {
   animation-delay: 0.2s;
-  width: 100px;
-  height: 120px;
-  background: url("/src/assets/botao.png") no-repeat center/contain;
 }
 
 .acao:nth-child(3) {
